@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to create a modal using CSS and JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Start of the modal -->
+    <div class="modal" id="example-modal" data-modal>
+      <div class="modal-content fade" data-content="modal">
+        <div class="modal-header">
+          <h2>Modal Title</h2>
+          <button class="modal-close" data-dismiss="modal" data-target="example-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Text in the Modal!</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-close" data-dismiss="modal" data-target="example-modal">Close</button>
+          <button class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+    <!-- End of the modal -->
+	
+    <!-- Button that will trigger the modal -->
+    <button class="btn btn-primary" data-toggle="modal" data-target="example-modal">Open Modal</button>
+    
+	<script src="script.js"></script>
+  </body>
+</html>
